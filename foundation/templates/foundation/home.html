@@ -1,0 +1,418 @@
+{% extends "foundation/base.html" %}
+{% load static %}
+{% block title %}BM Seed of Hope Foundation — Planting Seeds of Hope, Growing Leaders for Africa{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-grain"></div>
+  <div class="wrap">
+    <div>
+      <div class="hero-eyebrow">Youth-led &middot; Humanitarian &middot; Non-political</div>
+      <h1>Planting seeds of hope,<br>growing <em>leaders</em> for Africa.</h1>
+      <p class="lede">BM Seed of Hope Foundation empowers young people, women, and vulnerable communities across Cameroon and Africa through entrepreneurship, leadership, education, and humanitarian action.</p>
+      <div class="hero-actions">
+        <a href="{% url 'foundation:donate' %}" class="btn btn-primary">Donate Today</a>
+        <a href="{% url 'foundation:volunteer' %}" class="btn btn-outline">Become a Volunteer</a>
+        <a href="{% url 'foundation:about' %}" class="btn btn-outline">Read Our Story</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b data-count="5">0</b><span>Strategic Pillars</span></div>
+        <div class="hstat"><b data-count="10">0</b><span>Core Values</span></div>
+        <div class="hstat"><b data-count="3">0</b><span>Global Frameworks Aligned</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="seedmark" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="stroke" d="M160 400V180" stroke-dasharray="4 6"/>
+        <path class="leaf" d="M160 210C120 190 90 150 95 100C150 105 175 145 160 210Z"/>
+        <path class="leaf2" d="M160 240C205 225 240 190 238 140C185 142 155 180 160 240Z"/>
+        <path class="leaf" d="M160 270C115 262 82 232 78 190C128 188 158 220 160 270Z" opacity=".85"/>
+        <ellipse cx="160" cy="392" rx="34" ry="14" fill="#F4B400" opacity=".35"/>
+        <circle cx="160" cy="384" r="9" fill="#F4B400"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="motto-strip">
+  <div class="motto-track">
+    <span><b>Planting Seeds of Hope</b> — Growing Leaders for Africa</span>
+    <span>Hope for All, <b>Change for Life</b></span>
+    <span><b>Planting Seeds of Hope</b> — Growing Leaders for Africa</span>
+    <span>Hope for All, <b>Change for Life</b></span>
+    <span><b>Planting Seeds of Hope</b> — Growing Leaders for Africa</span>
+    <span>Hope for All, <b>Change for Life</b></span>
+  </div>
+</div>
+
+<!-- ============ IMPACT / STATS ============ -->
+<section class="section" id="impact-stats">
+  <div class="wrap">
+    <div class="eyebrow">Our Impact So Far</div>
+    <h2 style="font-size:32px;margin:16px 0 36px;max-width:640px;">Numbers behind the mission.</h2>
+    <!-- NOTE: replace placeholder figures below with verified programme data -->
+    <div class="impact-grid reveal">
+      <div class="impact-card">
+        <span class="n">1</span>
+        <h4>Youth Trained</h4>
+        <p>Young people equipped with entrepreneurship and leadership skills since our founding.</p>
+      </div>
+      <div class="impact-card">
+        <span class="n">2</span>
+        <h4>Communities Reached</h4>
+        <p>Vulnerable communities across Cameroon supported through humanitarian outreach.</p>
+      </div>
+      <div class="impact-card">
+        <span class="n">3</span>
+        <h4>Scholarships Awarded</h4>
+        <p>Educational scholarships and school-support packages granted to young people.</p>
+      </div>
+      <div class="impact-card">
+        <span class="n">4</span>
+        <h4>Women Empowered</h4>
+        <p>Women supported through economic empowerment and skills-training initiatives.</p>
+      </div>
+      <div class="impact-card">
+        <span class="n">5</span>
+        <h4>Active Volunteers</h4>
+        <p>Volunteers currently contributing time and expertise across our programmes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="pillbox">
+        <h3>Our Vision</h3>
+        <p>A prosperous, inclusive, and resilient Africa where every young person and vulnerable individual has access to opportunities, skills, and support to realize their full potential.</p>
+      </div>
+      <div class="pillbox">
+        <h3>Our Mission</h3>
+        <p>To empower young people, women, and vulnerable communities through entrepreneurship, leadership, education, humanitarian assistance, and sustainable community initiatives that foster independence and lasting transformation.</p>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <div class="eyebrow">About the Foundation</div>
+      <h2>Youth-led. Community-rooted. Built on belief in Africa's greatest asset — its people.</h2>
+      <p>The BM Seed of Hope Foundation (BMSOHF) is a youth-led, non-profit, non-political, and humanitarian organization committed to empowering young people and transforming vulnerable communities through sustainable development initiatives.</p>
+      <p>We recognize that many young people possess the talent, ambition, and creativity to succeed but are often constrained by unemployment, limited access to quality education, poverty, and social inequality. Our work bridges that gap.</p>
+      <a href="{% url 'foundation:about' %}" class="btn btn-line">More about us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CORE VALUES TEASER ============ -->
+<section class="section section-alt" id="values">
+  <div class="wrap">
+    <div class="block-head">
+      <div>
+        <div class="eyebrow">What Guides Us</div>
+        <h2>Ten core values. Five shown here.</h2>
+        <p class="lede">The principles our team and volunteers carry into every community we work with.</p>
+      </div>
+      <a href="{% url 'foundation:about' %}" class="btn btn-line">See all 10 values</a>
+    </div>
+    <div class="values-grid reveal">
+      <div class="value-card">
+        <span class="value-num">01</span>
+        <h4>Integrity</h4>
+        <p>We act honestly and transparently with communities, partners, and each other.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">02</span>
+        <h4>Compassion</h4>
+        <p>We lead with empathy for the people and communities we serve.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">03</span>
+        <h4>Empowerment</h4>
+        <p>We equip people with tools to build their own future, not dependency.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">04</span>
+        <h4>Inclusion</h4>
+        <p>Every programme is open regardless of background, gender, or ability.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-num">05</span>
+        <h4>Accountability</h4>
+        <p>We measure our work and answer honestly for its outcomes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pillars-teaser">
+  <div class="wrap">
+    <div class="eyebrow">Strategic Pillars</div>
+    <h2 style="font-size:32px;margin:16px 0 12px;max-width:640px;">Five pillars, one shared purpose.</h2>
+    <p class="lede" style="font-size:15.5px;margin-bottom:36px;">Entrepreneurship, education, humanitarian assistance, women's empowerment, and environmental sustainability.</p>
+    <a href="{% url 'foundation:programmes' %}" class="btn btn-line">Explore our programmes</a>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section section-alt" id="gallery">
+  <div class="wrap">
+    <div class="block-head">
+      <div>
+        <div class="eyebrow">Moments From The Field</div>
+        <h2>See the work in progress.</h2>
+      </div>
+    </div>
+    <!-- NOTE: swap each .gallery-card background for a real photo (background-image) once assets are available -->
+    <div class="gallery-grid reveal">
+      <div class="gallery-card g-1 g-tall"><span>Leadership training workshop, Buea</span></div>
+      <div class="gallery-card g-2"><span>Scholarship handover day</span></div>
+      <div class="gallery-card g-3 g-wide"><span>Women's enterprise cooperative launch</span></div>
+      <div class="gallery-card g-4"><span>Community health outreach</span></div>
+      <div class="gallery-card g-5"><span>Youth entrepreneurship fair</span></div>
+      <div class="gallery-card g-6 g-wide"><span>Tree-planting for sustainability day</span></div>
+      <div class="gallery-card g-7"><span>Volunteer orientation session</span></div>
+    </div>
+    <p class="gallery-note">Photos are placeholders — final gallery images to be added from programme documentation.</p>
+  </div>
+</section>
+
+<section class="section founder">
+  <div class="wrap founder-grid">
+    <div class="founder-portrait reveal">
+      <div class="fp-name">
+        <b>Brenda Monono</b>
+        <span>Founder &amp; President</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Message from the Founder</div>
+      <blockquote class="founder-quote">Poverty is not always the absence of money. Sometimes it is the absence of encouragement, opportunity, confidence, and someone who believes in your potential.</blockquote>
+      <a href="{% url 'foundation:about' %}" class="btn btn-line">Read the full letter</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section" id="testimonials">
+  <div class="wrap">
+    <div class="eyebrow">In Their Words</div>
+    <h2 style="font-size:30px;margin:16px 0 36px;max-width:640px;">Voices from the communities we work with.</h2>
+    <!-- NOTE: replace with real, permissioned beneficiary quotes -->
+    <div class="testimonial-grid reveal">
+      <div class="testimonial-card">
+        <p class="quote">The entrepreneurship training gave me the confidence to register my own tailoring business. I now train two other young women.</p>
+        <div class="t-person">
+          <div class="t-avatar a1">A</div>
+          <div><b>Programme Graduate</b><span>Entrepreneurship Fellowship</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">My scholarship meant I could finish secondary school without my family choosing between fees and food.</p>
+        <div class="t-person">
+          <div class="t-avatar a2">S</div>
+          <div><b>Scholarship Recipient</b><span>Education Support Programme</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">Volunteering with the foundation showed me leadership is about service first. It shaped how I lead at work today.</p>
+        <div class="t-person">
+          <div class="t-avatar a3">V</div>
+          <div><b>Volunteer</b><span>Volunteer Leadership Programme</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="section section-alt" id="video">
+  <div class="wrap video-section">
+    <!-- NOTE: replace play-button placeholder with an embedded video (YouTube/Vimeo iframe) once available -->
+    <a href="#" class="video-frame reveal" aria-label="Play foundation video">
+      <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+    </a>
+    <div class="video-copy reveal">
+      <div class="eyebrow">Watch Our Story</div>
+      <h2>Two minutes inside a Seed of Hope programme.</h2>
+      <p>A short film following one cohort of young entrepreneurs from training to launch — shot on location in Buea and Limbe.</p>
+      <a href="{% url 'foundation:about' %}" class="btn btn-line">More about our work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UPCOMING EVENTS ============ -->
+<section class="section" id="events">
+  <div class="wrap">
+    <div class="block-head">
+      <div>
+        <div class="eyebrow">What's Next</div>
+        <h2>Upcoming events.</h2>
+      </div>
+      <a href="{% url 'foundation:contact' %}" class="btn btn-line">Ask about attending</a>
+    </div>
+    <!-- NOTE: replace with real event data, ideally from a model/queryset -->
+    <div class="events-list reveal">
+      <div class="event-row">
+        <div class="event-date"><b>14</b><span>Aug</span></div>
+        <div class="event-info">
+          <h4>Youth Entrepreneurship Bootcamp</h4>
+          <span>Buea, South West Region &middot; 3-day intensive</span>
+        </div>
+        <a href="{% url 'foundation:contact' %}" class="btn btn-line">Details</a>
+      </div>
+      <div class="event-row">
+        <div class="event-date"><b>02</b><span>Sep</span></div>
+        <div class="event-info">
+          <h4>Women's Cooperative Skills Fair</h4>
+          <span>Limbe, South West Region &middot; Open to the public</span>
+        </div>
+        <a href="{% url 'foundation:contact' %}" class="btn btn-line">Details</a>
+      </div>
+      <div class="event-row">
+        <div class="event-date"><b>21</b><span>Sep</span></div>
+        <div class="event-info">
+          <h4>Community Tree-Planting Day</h4>
+          <span>Multiple sites &middot; Volunteers welcome</span>
+        </div>
+        <a href="{% url 'foundation:volunteer' %}" class="btn btn-line">Volunteer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAMPAIGN / DONATION PROGRESS ============ -->
+<section class="section section-alt" id="campaign">
+  <div class="wrap">
+    <!-- NOTE: wire progress-fill width and figures to real campaign totals -->
+    <div class="campaign-card reveal">
+      <div class="campaign-inner">
+        <div class="campaign-copy">
+          <div class="eyebrow" style="color:var(--gold);">Active Campaign</div>
+          <h2>2026 Scholarship Fund</h2>
+          <p>Help us send 50 more students back to school this year. Every gift, of any size, moves us closer.</p>
+        </div>
+        <div class="progress-wrap">
+          <b style="color:#fff;">Raised toward goal</b>
+          <div class="progress-track"><div class="progress-fill" style="width:42%;"></div></div>
+          <div class="progress-nums"><span>42% funded</span><span>Goal: $20,000</span></div>
+          <a href="{% url 'foundation:donate' %}" class="btn btn-primary" style="width:100%;">Support This Campaign</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section involve" id="involve">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold);">Get Involved</div>
+    <h2>Your contribution plants a seed that grows into lasting change.</h2>
+    <p class="lede">Whether you give, volunteer, or partner with us — you become part of a movement restoring hope across Cameroon and Africa.</p>
+    <div class="involve-cards">
+      <div class="icard reveal">
+        <h3>Donate</h3>
+        <p>Support scholarships, humanitarian response, and enterprise fellowships with a one-time or monthly gift.</p>
+        <a href="{% url 'foundation:donate' %}" class="btn btn-primary">Give Now</a>
+      </div>
+      <div class="icard reveal">
+        <h3>Volunteer</h3>
+        <p>Join our Volunteer Leadership Development Programme and contribute your time and skills.</p>
+        <a href="{% url 'foundation:volunteer' %}" class="btn btn-outline">Apply to Volunteer</a>
+      </div>
+      <div class="icard reveal">
+        <h3>Partner</h3>
+        <p>Institutions can collaborate on programme delivery, funding, or technical assistance.</p>
+        <a href="{% url 'foundation:partner' %}" class="btn btn-outline">Start a Partnership</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="block-head">
+      <div>
+        <div class="eyebrow">Who We Are</div>
+        <h2>The team behind the work.</h2>
+      </div>
+      <a href="{% url 'foundation:about' %}" class="btn btn-line">Meet the full team</a>
+    </div>
+    <!-- NOTE: replace initials/gradient blocks with real headshots when available -->
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-photo tp-1"><b>BM</b></div>
+        <div class="team-info"><b>Brenda Monono</b><span>Founder &amp; President</span></div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo tp-2"><b>PD</b></div>
+        <div class="team-info"><b>Programme Director</b><span>Entrepreneurship &amp; Education</span></div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo tp-3"><b>OC</b></div>
+        <div class="team-info"><b>Operations Coordinator</b><span>Field Operations</span></div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo tp-4"><b>VL</b></div>
+        <div class="team-info"><b>Volunteer Lead</b><span>Volunteer Development</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESS / MEDIA MENTIONS ============ -->
+<section class="section-tight section-alt" id="press">
+  <div class="wrap">
+    <div class="eyebrow" style="margin-bottom:22px;">As Seen In</div>
+    <!-- NOTE: replace with real outlet names/logos once coverage exists -->
+    <div class="press-strip reveal">
+      <div class="press-item"><b>Cameroon Tribune</b> &middot; Community Feature</div>
+      <div class="press-item"><b>CRTV</b> &middot; Regional Broadcast</div>
+      <div class="press-item"><b>Mimi Mefo Info</b> &middot; Youth Impact Story</div>
+      <div class="press-item"><b>AU Youth Bulletin</b> &middot; Programme Spotlight</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="eyebrow">Common Questions</div>
+    <h2 style="font-size:30px;margin:16px 0 36px;max-width:600px;">Before you give or get involved.</h2>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>Is my donation tax-deductible?</summary>
+        <p>This depends on your country of residence and applicable local law. Please contact us for documentation to confirm eligibility in your jurisdiction.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I know my donation is used well?</summary>
+        <p>We publish programme updates and impact figures, and donors can request a breakdown of how funds are allocated across our five strategic pillars.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can my organization partner with BM Seed of Hope?</summary>
+        <p>Yes. We welcome partnerships with institutions on programme delivery, funding, or technical assistance. Reach out through our partnership page to start a conversation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you accept international volunteers?</summary>
+        <p>Yes, both remote and in-country volunteering opportunities are available. Apply through our volunteer page and our team will follow up with next steps.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="section-tight" id="newsletter">
+  <div class="wrap">
+    <div class="newsletter reveal">
+      <div>
+        <h3>Stay close to the work.</h3>
+        <p>One short email a month — programme updates, stories from the field, and ways to help.</p>
+      </div>
+      <form class="newsletter-form" method="post" action="{% url 'foundation:contact' %}">
+        {% csrf_token %}
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

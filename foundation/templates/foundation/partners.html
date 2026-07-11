@@ -1,0 +1,129 @@
+{% extends "foundation/base.html" %}
+{% block title %}Partnerships — BM Seed of Hope Foundation{% endblock %}
+{% block nav_partners %}active{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="{% url 'foundation:home' %}">Home</a> / Partners</div>
+    <div class="eyebrow">Partnerships &amp; Collaboration</div>
+    <h1>Sustainable development cannot be achieved by one organization alone.</h1>
+    <p>We actively cultivate transparent, mutually beneficial partnerships that leverage expertise, resources, and shared commitment to improving lives.</p>
+  </div>
+</section>
+
+{% if partners %}
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow">Organizations We Work With</div>
+    <div class="reveal" style="display:flex; flex-wrap:wrap; gap:28px; align-items:center; margin-top:20px;">
+      {% for p in partners %}
+        {% if p.website %}<a href="{{ p.website }}" target="_blank" rel="noopener">{% endif %}
+        {% if p.logo %}
+          <img src="{{ p.logo.url }}" alt="{{ p.name }}" style="height:52px; width:auto; object-fit:contain;">
+        {% else %}
+          <span class="tag">{{ p.name }}</span>
+        {% endif %}
+        {% if p.website %}</a>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section" id="partners">
+  <div class="wrap partners-grid">
+    <div class="reveal">
+      <div class="eyebrow">Our Strategic Partners</div>
+      <p class="lede" style="font-size:15.5px;margin:16px 0 20px;">We welcome collaboration with:</p>
+      <div class="tag-cloud">
+        <span class="tag">Government Ministries</span>
+        <span class="tag">Local &amp; Regional Councils</span>
+        <span class="tag">UN Agencies</span>
+        <span class="tag">African Union Institutions</span>
+        <span class="tag">Development Partners &amp; INGOs</span>
+        <span class="tag">Diplomatic Missions</span>
+        <span class="tag">Universities &amp; Research Institutions</span>
+        <span class="tag">Financial Institutions</span>
+        <span class="tag">Private Sector &amp; SMEs</span>
+        <span class="tag">Faith-Based Organizations</span>
+        <span class="tag">Community-Based Organizations</span>
+        <span class="tag">Youth &amp; Women's Associations</span>
+        <span class="tag">Media Organizations</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Areas of Collaboration</div>
+      <p class="lede" style="font-size:15.5px;margin:16px 0 20px;">Programme implementation, technical assistance, capacity building, research and innovation, sponsorship and funding, CSR, volunteer engagement, advocacy, scholarships, business incubation, humanitarian assistance, and environmental sustainability initiatives.</p>
+      <div class="eyebrow">Our Partnership Principles</div>
+      <div class="principle-row">
+        <span class="tag">Mutual Respect</span>
+        <span class="tag">Shared Vision</span>
+        <span class="tag">Transparency</span>
+        <span class="tag">Accountability</span>
+        <span class="tag">Inclusivity</span>
+        <span class="tag">Innovation</span>
+        <span class="tag">Sustainability</span>
+        <span class="tag">Community Ownership</span>
+        <span class="tag">Results-Based Management</span>
+        <span class="tag">Long-Term Impact</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="eyebrow">Why Partner With Us</div>
+    <h2 style="margin-top:12px;">What partners gain by working with us</h2>
+    <div class="involve-cards" style="margin-top:36px;">
+      <div class="icard reveal" style="background:#fff;border-color:var(--line);">
+        <h3 style="color:var(--deep-blue-dark);">A Grounded Local Network</h3>
+        <p style="color:var(--ink-soft);">Direct access to the youth, women, and communities across Cameroon that your programme or funding is designed to reach.</p>
+      </div>
+      <div class="icard reveal" style="background:#fff;border-color:var(--line);">
+        <h3 style="color:var(--deep-blue-dark);">Alignment With Global Frameworks</h3>
+        <p style="color:var(--ink-soft);">Our work is mapped to Cameroon Vision 2035, the African Union Agenda 2063, and the UN Sustainable Development Goals — supporting your own reporting and impact narratives.</p>
+      </div>
+      <div class="icard reveal" style="background:#fff;border-color:var(--line);">
+        <h3 style="color:var(--deep-blue-dark);">Shared, Transparent Impact</h3>
+        <p style="color:var(--ink-soft);">We keep partners informed on how a collaboration is progressing, in line with the accountability and transparency principles that guide our work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">The Process</div>
+    <h2 style="margin-top:12px;">How to start a partnership</h2>
+    <p class="lede" style="margin-top:14px;">Formal partnerships are built deliberately — here's the general path from first contact to launch.</p>
+    <div class="toc-path reveal" style="margin-top:44px;max-width:640px;">
+      <div class="toc-step">
+        <div class="toc-node"><svg viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.4 2L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012-.4c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg></div>
+        <div class="toc-body"><div class="toc-title">Reach out</div><p>Share who you are and what kind of collaboration you have in mind through our Partner form.</p></div>
+      </div>
+      <div class="toc-step">
+        <div class="toc-node"><svg viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M12 20l9-5v-6l-9 5-9-5v6l9 5z"/></svg></div>
+        <div class="toc-body"><div class="toc-title">Explore alignment</div><p>We discuss shared goals and how the collaboration fits our strategic pillars and your priorities.</p></div>
+      </div>
+      <div class="toc-step">
+        <div class="toc-node"><svg viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <div class="toc-body"><div class="toc-title">Formalize the partnership</div><p>Once details are agreed, we put the collaboration in writing so both sides are clear on scope and expectations.</p></div>
+      </div>
+      <div class="toc-step">
+        <div class="toc-node"><svg viewBox="0 0 24 24" fill="none" stroke="#2E8B57" stroke-width="2"><path d="M12 21c4-3 8-6.5 8-11a8 8 0 10-16 0c0 4.5 4 8 8 11z"/></svg></div>
+        <div class="toc-body"><div class="toc-title">Launch and report</div><p>The partnership goes live, with regular updates so progress and impact stay visible to everyone involved.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section involve">
+  <div class="wrap" style="text-align:center;">
+    <div class="eyebrow" style="color:var(--gold);justify-content:center;">Partner With Us</div>
+    <h2 style="margin:16px auto 20px;">Let's build an ecosystem that accelerates Africa's transformation.</h2>
+    <a href="{% url 'foundation:partner' %}" class="btn btn-primary">Start a Partnership</a>
+  </div>
+</section>
+{% endblock %}

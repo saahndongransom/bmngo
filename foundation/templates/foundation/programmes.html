@@ -1,0 +1,230 @@
+{% extends "foundation/base.html" %}
+{% block title %}Programmes — BM Seed of Hope Foundation{% endblock %}
+{% block nav_programmes %}active{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="{% url 'foundation:home' %}">Home</a> / Programmes</div>
+    <div class="eyebrow">Strategic Pillars &amp; Flagship Initiatives</div>
+    <h1>Five interconnected pillars, one shared purpose.</h1>
+    <p>The Foundation implements its programmes through five Strategic Pillars, each supported by flagship initiatives that deliver measurable, sustainable, and community-driven impact.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="eyebrow">Pillars at a Glance</div>
+    <h2 style="margin-top:12px;">Jump to any pillar</h2>
+    <div class="tag-cloud reveal" style="margin-top:24px;">
+      <a href="#pillar-1" class="tag" style="text-decoration:none;">I — Youth Entrepreneurship &amp; Economic Empowerment</a>
+      <a href="#pillar-2" class="tag" style="text-decoration:none;">II — Education, Leadership &amp; Skills Development</a>
+      <a href="#pillar-3" class="tag" style="text-decoration:none;">III — Humanitarian Assistance &amp; Community Resilience</a>
+      <a href="#pillar-4" class="tag" style="text-decoration:none;">IV — Women Empowerment &amp; Gender Equality</a>
+      <a href="#pillar-5" class="tag" style="text-decoration:none;">V — Environmental Sustainability &amp; Well-being</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="lede" style="font-size:15.5px;margin-bottom:36px;">Click a pillar to explore its flagship initiatives and expected outcomes.</p>
+    <div class="pillars reveal" id="pillarsList">
+
+      <div class="pillar open" id="pillar-1">
+        <div class="pillar-head">
+          <div class="pillar-head-left">
+            <div class="pillar-roman">I</div>
+            <div class="pillar-titles"><h3>Youth Entrepreneurship, Innovation &amp; Economic Empowerment</h3><span>Turning job seekers into job creators</span></div>
+          </div>
+          <svg class="pillar-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pillar-body"><div class="pillar-body-inner">
+          <div>
+            <p>BM Seed of Hope equips young people with practical entrepreneurial skills, business knowledge, financial literacy, and mentorship to build sustainable enterprises and create jobs — promoting entrepreneurship, digital skills, agribusiness, and financial inclusion.</p>
+            <ul class="flag-list">
+              <li>Elevate Her 2063 Enterprise Fellowship (EHEF 2063)</li>
+              <li>Future Founders Innovate Challenge</li>
+              <li>Financial Literacy &amp; Investment Readiness Academy</li>
+            </ul>
+          </div>
+          <div class="outcomes"><h5>Expected Outcomes</h5><ul>
+            <li>Increased youth entrepreneurship and self-employment</li>
+            <li>Sustainable youth-led enterprises</li>
+            <li>Enhanced financial literacy and business skills</li>
+            <li>Job creation and local economic growth</li>
+          </ul></div>
+        </div></div>
+      </div>
+
+      <div class="pillar" id="pillar-2">
+        <div class="pillar-head">
+          <div class="pillar-head-left">
+            <div class="pillar-roman">II</div>
+            <div class="pillar-titles"><h3>Education, Leadership &amp; Skills Development</h3><span>Building Africa's human capital</span></div>
+          </div>
+          <svg class="pillar-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pillar-body"><div class="pillar-body-inner">
+          <div>
+            <p>Education is the foundation of sustainable development. We promote access to quality education, leadership development, vocational training, life skills, and digital literacy — extending learning beyond the classroom into character and civic engagement.</p>
+            <ul class="flag-list">
+              <li>Seed of Hope Scholarship &amp; Educational Support Programme</li>
+              <li>Youth Leadership &amp; Civic Engagement Academy</li>
+              <li>Digital Skills for the Future Initiative</li>
+              <li>Career Development &amp; Employability Programme</li>
+              <li>School Mentorship and Career Guidance Outreach</li>
+            </ul>
+          </div>
+          <div class="outcomes"><h5>Expected Outcomes</h5><ul>
+            <li>Improved educational opportunities</li>
+            <li>Increased employability</li>
+            <li>Strong youth leadership</li>
+            <li>Improved digital competencies</li>
+          </ul></div>
+        </div></div>
+      </div>
+
+      <div class="pillar" id="pillar-3">
+        <div class="pillar-head">
+          <div class="pillar-head-left">
+            <div class="pillar-roman">III</div>
+            <div class="pillar-titles"><h3>Humanitarian Assistance &amp; Community Resilience</h3><span>Restoring hope, protecting dignity</span></div>
+          </div>
+          <svg class="pillar-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pillar-body"><div class="pillar-body-inner">
+          <div>
+            <p>We provide humanitarian support to vulnerable children, women, families, displaced persons, and underserved communities affected by poverty and crisis — restoring dignity while strengthening long-term resilience.</p>
+            <ul class="flag-list">
+              <li>Hope &amp; Care Humanitarian Response Programme</li>
+              <li>Community Food Security &amp; Nutrition Initiative</li>
+              <li>Back-to-School Support Campaign</li>
+              <li>Emergency Relief &amp; Disaster Response Programme</li>
+              <li>Child Protection and Safe Childhood Initiative</li>
+            </ul>
+          </div>
+          <div class="outcomes"><h5>Expected Outcomes</h5><ul>
+            <li>Improved access to humanitarian assistance</li>
+            <li>Increased protection of vulnerable populations</li>
+            <li>Strengthened community resilience</li>
+            <li>Enhanced child welfare and educational access</li>
+          </ul></div>
+        </div></div>
+      </div>
+
+      <div class="pillar" id="pillar-4">
+        <div class="pillar-head">
+          <div class="pillar-head-left">
+            <div class="pillar-roman">IV</div>
+            <div class="pillar-titles"><h3>Women Empowerment, Gender Equality &amp; Social Inclusion</h3><span>Women leading community transformation</span></div>
+          </div>
+          <svg class="pillar-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pillar-body"><div class="pillar-body-inner">
+          <div>
+            <p>Women remain central to Africa's development. We promote women's economic empowerment, leadership, financial inclusion, and equal participation in decision-making — helping women and girls become confident entrepreneurs and advocates for change.</p>
+            <ul class="flag-list">
+              <li>Elevate Her Enterprise Fellowship 2063</li>
+              <li>Women in Leadership Network</li>
+              <li>Girls Mentorship &amp; Life Skills Programme</li>
+              <li>Women Financial Inclusion Initiative</li>
+              <li>Young Mothers Economic Empowerment Programme</li>
+            </ul>
+          </div>
+          <div class="outcomes"><h5>Expected Outcomes</h5><ul>
+            <li>Increased women-owned businesses</li>
+            <li>Improved household incomes</li>
+            <li>Stronger female leadership</li>
+            <li>Greater gender equality and social inclusion</li>
+          </ul></div>
+        </div></div>
+      </div>
+
+      <div class="pillar" id="pillar-5">
+        <div class="pillar-head">
+          <div class="pillar-head-left">
+            <div class="pillar-roman">V</div>
+            <div class="pillar-titles"><h3>Environmental Sustainability &amp; Community Well-being</h3><span>A cross-cutting commitment to resilience</span></div>
+          </div>
+          <svg class="pillar-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pillar-body"><div class="pillar-body-inner">
+          <div>
+            <p>Environmental sustainability is woven through our programme design alongside youth leadership, digital innovation, disability inclusion, and peacebuilding — reflecting our commitment to communities that can thrive for generations.</p>
+          </div>
+          <div class="outcomes"><h5>Expected Outcomes</h5><ul>
+            <li>Increased environmental awareness</li>
+            <li>Improved community sanitation</li>
+            <li>Climate-resilient communities</li>
+            <li>Greater youth participation in environmental conservation</li>
+          </ul></div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="eyebrow">Cross-Cutting Themes</div>
+    <h2 style="font-size:28px;margin:16px 0 20px;max-width:700px;">Woven through every pillar.</h2>
+    <div class="tag-cloud">
+      <span class="tag">Youth Leadership &amp; Participation</span>
+      <span class="tag">Gender Equality</span>
+      <span class="tag">Child Protection &amp; Safeguarding</span>
+      <span class="tag">Disability Inclusion</span>
+      <span class="tag">Human Rights &amp; Social Justice</span>
+      <span class="tag">Digital Innovation</span>
+      <span class="tag">Environmental Sustainability</span>
+      <span class="tag">Peacebuilding &amp; Social Cohesion</span>
+      <span class="tag">Volunteerism</span>
+      <span class="tag">Community Ownership</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Aligned With Global Frameworks</div>
+    <h2 style="margin-top:12px;">Rooted locally, mapped globally</h2>
+    <p class="lede" style="margin-top:14px;">Every pillar is designed to contribute toward the same frameworks guiding development across the continent.</p>
+    <div class="tag-cloud reveal" style="margin-top:28px;">
+      <span class="tag">Cameroon Vision 2035</span>
+      <span class="tag">African Union Agenda 2063</span>
+      <span class="tag">UN Sustainable Development Goals</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Who We Serve</div>
+    <h2 style="margin-top:12px;">Communities at the centre of every pillar</h2>
+    <p class="lede" style="margin-top:14px;">Across all five pillars, our programmes are designed around the people who need them most.</p>
+    <div class="tag-cloud reveal" style="margin-top:28px;">
+      <span class="tag">Young People &amp; Youth Entrepreneurs</span>
+      <span class="tag">Women &amp; Girls</span>
+      <span class="tag">Children</span>
+      <span class="tag">Vulnerable Families</span>
+      <span class="tag">Displaced Persons</span>
+      <span class="tag">Persons With Disabilities</span>
+      <span class="tag">Rural &amp; Underserved Communities</span>
+    </div>
+  </div>
+</section>
+
+<section class="section involve">
+  <div class="wrap" style="text-align:center;">
+    <div class="eyebrow" style="color:var(--gold);justify-content:center;">Support This Work</div>
+    <h2 style="margin:16px auto 20px;">Every pillar moves forward with your support.</h2>
+    <p class="lede" style="color:rgba(255,255,255,.8);margin:0 auto 28px;">Give, volunteer, or partner with us to help carry these programmes further.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="{% url 'foundation:donate' %}" class="btn btn-primary">Donate</a>
+      <a href="{% url 'foundation:volunteer' %}" class="btn btn-line" style="border-color:#fff;color:#fff;">Volunteer</a>
+      <a href="{% url 'foundation:partner' %}" class="btn btn-line" style="border-color:#fff;color:#fff;">Partner</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
